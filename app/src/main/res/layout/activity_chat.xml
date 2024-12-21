@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity"
+    android:background="@drawable/background">
+    <RelativeLayout
+        android:id="@+id/second_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/UserProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/left_pic"
+            />
+        <include layout="@layout/profile_pic"
+            android:id="@+id/left_pic"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/back_btn"
+            />
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/icon_back"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@color/white"
+            android:layout_centerVertical="true"
+
+            />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/second_toolbar"
+        android:layout_above="@+id/bottom_layout"
+        android:id="@+id/chatRecycler"
+        />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:id="@+id/bottom_layout"
+    android:layout_alignParentBottom="true"
+    android:padding="8dp">
+
+    <EditText
+        android:id="@+id/chat_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="Ketik Pesan..."
+        android:background="@drawable/edit_text_tumpul"
+        android:layout_margin="10dp"
+        android:elevation="4dp"
+        android:padding="10dp"
+        android:textColor="?attr/colorSecondary"
+        android:layout_toLeftOf="@id/send_massage_btn"
+        />
+<!--    <ImageView-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:src="@drawable/circle"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        app:tint="@color/yellow"-->
+<!--        android:layout_toStartOf="@+id/send_massage_btn"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        />-->
+
+<ImageButton
+    android:backgroundTint="@color/yellow"
+    android:id="@+id/send_massage_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/baseline_send_24"
+    android:layout_alignParentEnd="true"
+    android:layout_centerInParent="true"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/circle"
+    app:tint="@color/Putih_Hitam"
+    android:padding="8dp"
+    android:layout_marginStart="10dp"
+    />
+
+</RelativeLayout>
+
+</RelativeLayout>

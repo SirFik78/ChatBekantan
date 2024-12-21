@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/edit_text_tumpul"
+    android:layout_margin="10dp"
+    android:backgroundTint="@color/Putih_Hitam_Chat"
+    android:elevation="2dp">
+
+    <include layout="@layout/profile_pic"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:id="@+id/profile_pic_user"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="User name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/name_chat_text"
+                android:textColor="@color/Hitam_Putih"
+                />
+            <TextView
+                android:textColor="@color/Hitam_Putih"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/time_message_text"
+
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/Hitam_Putih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="+00000000000000000"
+            android:id="@+id/phone_chat_text"
+
+            />
+    </LinearLayout>
+</LinearLayout>

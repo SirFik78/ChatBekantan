@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="menu_item_default">#FFFFFF</color> <!-- Putih untuk mode gelap -->
+    <color name="menu_item_selected">#E7C114</color> <!-- Kuning saat dipilih -->
+    <color name="yellow">#E7C114</color>
+    <color name="Putih_Hitam">#000000</color>
+    <color name="Putih_Hitam_Chat">#353535</color>
+    <color name="Hitam_Putih">#FFFFFF</color>
+
+</resources>

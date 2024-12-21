@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "152963493499",
+    "project_id": "bekantan-chat",
+    "storage_bucket": "bekantan-chat.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152963493499:android:077b819679254da5b2fcde",
+        "android_client_info": {
+          "package_name": "com.project.android.bekantan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQS9SMqMc7BkXURfUoTgLJ1bO7utdMDdY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
